@@ -111,6 +111,11 @@ resources:
                   # force the MAC address of the bridge to this interface
                   primary: true
                 -
+                  type: interface
+                  name: nic2
+                  use_dhcp: false
+                  defroute: false
+                -
                   type: vlan
                   vlan_id: {get_param: ExternalNetworkVlanID}
                   addresses:
