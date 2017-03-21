@@ -102,12 +102,12 @@ resources:
               members:
                 -
                   type: interface
-                  name: nic2
+                  name: enp2s0
                   # force the MAC address of the bridge to this interface
                   primary: true
                 -
                   type: interface
-                  name: nic3
+                  name: enp3s0
                   use_dhcp: false
                   defroute: false
                 -
