@@ -47,7 +47,7 @@ parameters:
       SwiftStorageNetwork: storage_mgmt
       SwiftProxyNetwork: storage
       SaharaApiNetwork: internal_api
-      HorizonNetwork: external
+      HorizonNetwork: internal_api
       MemcachedNetwork: internal_api
       RabbitmqNetwork: internal_api
       RedisNetwork: internal_api
