@@ -107,14 +107,14 @@ resources:
               members:
                 -
                   type: interface
-                  name: enp2s0
+                  name: nic1
                   # force the MAC address of the bridge to this interface
                   primary: true
                 -
                   type: interface
-                  name: enp3s0
-                  use_dhcp: false
-                  defroute: false
+                  name: nic2
+                  # force the MAC address of the bridge to this interface
+                  primary: false
                 -
                   type: vlan
                   vlan_id: {get_param: ExternalNetworkVlanID}
