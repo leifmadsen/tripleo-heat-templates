@@ -83,6 +83,10 @@ resources:
             -
               type: interface
               name: nic2
+              defroute: false
+            -
+              type: ovs_bridge
+              name: {get_input: bridge_name}
               use_dhcp: false
               dns_servers: {get_param: DnsServers}
               addresses:
@@ -99,10 +103,6 @@ resources:
                 -
                   default: true
                   next_hop: {get_param: ControlPlaneDefaultRoute}
-            -
-              type: ovs_bridge
-              name: {get_input: bridge_name}
-              use_dhcp: false
               members:
                 -
                   type: interface
