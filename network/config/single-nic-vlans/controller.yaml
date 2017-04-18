@@ -88,6 +88,9 @@ resources:
           params:
             $network_config:
               network_config:
+              - type: interface
+                name: nic2
+                defroute: false
               - type: ovs_bridge
                 name: bridge_name
                 use_dhcp: false
